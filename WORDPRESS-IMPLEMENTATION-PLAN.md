@@ -1,6 +1,7 @@
-# TC Projects
+# WordPress Block Theme Implementation Plan
+## TC Projects Theme
 
-WordPress Block Theme Implementation Plan
+---
 
 ## Table of Contents
 1. [Theme Overview](#theme-overview)
@@ -57,6 +58,8 @@ WordPress Block Theme Implementation Plan
 - **Font Weights:** 
   - Body: 300 (light)
   - Headings: 400-500 (medium)
+
+**Note:** Google Fonts (Space Grotesk and Roboto Flex) are added via the WordPress Font Library in the Site Editor, not via PHP. See the "Using the Font Library" section in Code Reference.
 
 ### Spacing System
 - Use WordPress fluid spacing scale
@@ -180,14 +183,9 @@ Text Domain: tc-projects
     "typography": {
       "fontFamilies": [
         {
-          "fontFamily": "'Space Grotesk', sans-serif",
-          "slug": "heading",
-          "name": "Space Grotesk"
-        },
-        {
-          "fontFamily": "'Roboto Flex', sans-serif",
-          "slug": "body",
-          "name": "Roboto Flex"
+          "fontFamily": "system-ui, sans-serif",
+          "slug": "system",
+          "name": "System"
         }
       ],
       "fontSizes": [
@@ -342,19 +340,6 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Enqueue Google Fonts
- */
-function tcp_enqueue_google_fonts() {
-    wp_enqueue_style(
-        'tcp-google-fonts',
-        'https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap',
-        array(),
-        null
-    );
-}
-add_action('wp_enqueue_scripts', 'tcp_enqueue_google_fonts');
-
-/**
  * Enqueue custom styles
  */
 function tcp_enqueue_custom_styles() {
@@ -411,6 +396,8 @@ function tcp_register_block_styles() {
 }
 add_action('init', 'tcp_register_block_styles');
 ```
+
+**Note on Fonts:** Google Fonts (Space Grotesk and Roboto Flex) should be added using the WordPress Font Library in the Site Editor (Appearance → Editor → Styles → Typography → Manage Fonts). WordPress will automatically add them to your theme.json and handle loading. No PHP enqueue needed!
 
 ### Step 4: Create assets/css/custom-styles.css
 
@@ -1482,6 +1469,13 @@ export default function save({ attributes }) {
 5. **Activate and configure:**
    - Upload theme to WordPress
    - Activate theme
+   - **Add Google Fonts via Font Library:**
+     - Go to Appearance → Editor → Styles (top right corner)
+     - Click "Typography" → "Manage Fonts"
+     - Click "Add Fonts" → "Google Fonts"
+     - Search and install "Space Grotesk" (weights: 400, 500, 600, 700)
+     - Search and install "Roboto Flex" (weights: 300, 400, 500)
+     - WordPress will automatically add them to your theme.json
    - Set static front page
    - Create navigation menu
    - Insert patterns on homepage
@@ -1489,6 +1483,26 @@ export default function save({ attributes }) {
 ---
 
 ## Code Reference
+
+### Using the Font Library
+
+WordPress 6.5+ includes a Font Library in the Site Editor that allows you to manage Google Fonts without PHP code:
+
+**To add fonts:**
+1. Go to **Appearance → Editor**
+2. Click the **Styles** icon (top right)
+3. Click **Typography** → **Manage Fonts**
+4. Click **Add Fonts** → **Google Fonts**
+5. Search for and install:
+   - **Space Grotesk** (weights: 400, 500, 600, 700)
+   - **Roboto Flex** (weights: 300, 400, 500)
+
+WordPress will automatically:
+- Add font definitions to your theme.json
+- Load fonts optimally
+- Handle font display and performance
+
+After adding fonts, assign them in your theme.json `styles.elements` or use them via the editor.
 
 ### Navigation Setup
 
