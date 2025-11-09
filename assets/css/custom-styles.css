@@ -2,26 +2,34 @@
  * Custom Styles for TC Projects
  */
 
-
-/* ===========================
-   Decorative Background
-   =========================== */
+/* Background Gradient */
 html::before {
+    --translate-x: -5%;
+    --translate-y: -20%;
+    --rotate: -25deg;
+    
     content: '';
     position: fixed;
-    top: -15%;
-    right: -10%;
+    top: 0;
+    right: 0;
     width: 700px;
     height: 700px;
-    background: radial-gradient(circle at center, #fbbf24 0%, #10b981 40%, #14b8a6 60%, #000000 90%);
+    background: radial-gradient(ellipse at 60% 35%, #fbbf24 0%, #10b981 40%, #14b8a6 60%, #000000 90%);
     opacity: 0.17;
     filter: blur(100px);
-    transform: rotate(-25deg);
+    transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate));
+    transform-origin: top right;
     pointer-events: none;
     z-index: -1;
 }
 
-/* Random dots on body */
+@media (max-width: 782px) {
+    html::before {
+        --translate-x: 5%;
+    }
+}
+
+/* Background Random Dot Pattern */
 body::before {
     content: '';
     position: fixed;
@@ -41,10 +49,9 @@ body::before {
     background-position: 0 0, 30px 30px, 15px 45px, 40px 8px, 55px 22px, 20px 50px, 45px 15px, 10px 35px;
     mask-image: radial-gradient(ellipse 85% 115% at top right, black 25%, transparent 78%);
     -webkit-mask-image: radial-gradient(ellipse 85% 115% at top right, black 25%, transparent 78%);
-    transform: translate(105px, 30px);
 }
 
-/* SVG Grid Pattern */
+/* Background SVG Grid Pattern */
 body::after {
     content: '';
     position: fixed;
@@ -57,6 +64,14 @@ body::after {
     mask-image: radial-gradient(circle at top right, black 25%, transparent 55%);
     -webkit-mask-image: radial-gradient(circle at top right, black 25%, transparent 55%);
 }
+
+/* Header Sticky Background Blur Effect */
+header.is-position-sticky {
+    backdrop-filter: blur(8px) saturate(180%);
+    -webkit-backdrop-filter: blur(8px) saturate(180%);
+}
+
+
 
 /* ===========================
    Stat Item with Gradient Underline
