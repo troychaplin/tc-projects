@@ -1,5 +1,4 @@
-# WordPress Block Theme Implementation Plan
-## TC Projects Theme
+# TC Projects: WordPress Block Theme Implementation Plan
 
 ## Table of Contents
 1. [Theme Overview](#theme-overview)
