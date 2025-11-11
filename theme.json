@@ -6,23 +6,28 @@
 			"palette": [
 				{
 					"color": "#090909",
-					"name": "Dark One",
-					"slug": "dark-one"
+					"name": "Background",
+					"slug": "background"
 				},
 				{
-					"color": "#3d3d3d",
-					"name": "Dark Two",
-					"slug": "dark-two"
+					"color": "#b0b0b0",
+					"name": "Gray 300",
+					"slug": "gray-300"
 				},
 				{
-					"color": "#454545",
-					"name": "Dark Three",
-					"slug": "dark-three"
+					"color": "#d1d1d1",
+					"name": "Gray 200",
+					"slug": "gray-200"
 				},
 				{
-					"color": "#4f4f4f",
-					"name": "Dark Four",
-					"slug": "dark-four"
+					"color": "#e7e7e7",
+					"name": "Gray 100",
+					"slug": "gray-100"
+				},
+				{
+					"color": "#f6f6f6",
+					"name": "Gray 50",
+					"slug": "gray-50"
 				},
 				{
 					"color": "#10b981",
@@ -30,9 +35,9 @@
 					"slug": "emerald"
 				},
 				{
-					"color": "#14b8a6",
-					"name": "Teal",
-					"slug": "teal"
+					"color": "#fbbf24",
+					"name": "Lightning",
+					"slug": "lightning"
 				},
 				{
 					"color": "#ffffff",
@@ -40,24 +45,24 @@
 					"slug": "white"
 				},
 				{
-					"color": "#9ca3af",
-					"name": "Gray 400",
-					"slug": "gray-400"
-				},
-				{
-					"color": "#4b5563",
-					"name": "Gray 600",
-					"slug": "gray-600"
-				},
-				{
 					"color": "rgba(255, 255, 255, 0.1)",
 					"name": "White 10%",
 					"slug": "white-10"
 				},
 				{
+					"color": "#000000",
+					"name": "Black",
+					"slug": "black"
+				},
+				{
 					"color": "rgba(10, 10, 10, 0.8)",
 					"name": "Black 80%",
 					"slug": "black-80"
+				},
+				{
+					"color": "rgba(10, 10, 10, 0.25)",
+					"name": "Black 25%",
+					"slug": "black-25"
 				}
 			]
 		},
@@ -291,10 +296,21 @@
 	},
 	"styles": {
 		"color": {
-			"background": "var(--wp--preset--color--dark-one)",
+			"background": "var(--wp--preset--color--background)",
 			"text": "var(--wp--preset--color--white)"
 		},
 		"elements": {
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--emerald)",
+					"text": "var(--wp--preset--color--white)"
+				}
+			},
+			"caption": {
+				"color": {
+					"text": "var(--wp--preset--color--white)"
+				}
+			},
 			"h1": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--space-grotesk)",
@@ -332,8 +348,24 @@
 				}
 			},
 			"heading": {
+				"color": {
+					"text": "var(--wp--preset--color--gray-50)"
+				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--space-grotesk)"
+				}
+			},
+			"link": {
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--lightning)"
+					}
+				},
+				"color": {
+					"text": "var(--wp--preset--color--emerald)"
+				},
+				"typography": {
+					"textDecoration": "none"
 				}
 			}
 		},
