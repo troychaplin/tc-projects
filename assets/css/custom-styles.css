@@ -113,6 +113,15 @@ Tag Cloud Button Style
 }
 
 /* ===========================
+Header Styles
+=========================== */
+
+.wp-block-heading,
+.wp-block-post-title {
+    font-weight: 400;
+}
+
+/* ===========================
 Blog Card Styles
 =========================== */
 
@@ -124,4 +133,38 @@ Blog Card Styles
 .wp-block-group.blog-card .meta {
     width: 100%;
     margin-top: auto;
+}
+
+/* ===========================
+Pagination Styles
+=========================== */
+
+.wp-block-query-pagination {
+    margin-top: var(--wp--preset--spacing--xl);
+}
+
+.wp-block-query-pagination-numbers {
+    display: flex;
+    gap: var(--wp--preset--spacing--xs);
+    flex-wrap: wrap;
+}
+
+.wp-block-query-pagination-numbers .page-numbers {
+    padding: var(--wp--preset--spacing--xs) var(--wp--preset--spacing--sm);
+    margin: 0;
+    background-color: var(--wp--preset--color--black-25);
+    border: 1px solid var(--wp--preset--color--white-10);
+    color: var(--wp--preset--color--gray-300);
+    border-radius: 8px;
+}
+
+.wp-block-query-pagination-numbers a.page-numbers:hover,
+.wp-block-query-pagination-numbers span.page-numbers.current {
+    border: 1px solid var(--wp--preset--color--emerald);
+    color: var(--wp--preset--color--emerald);
+}
+
+.wp-block-query-pagination-next-arrow:hover,
+.wp-block-query-pagination-previous-arrow:hover {
+    color: var(--wp--preset--color--emerald);
 }
