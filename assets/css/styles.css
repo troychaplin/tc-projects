@@ -83,9 +83,9 @@ header.is-position-sticky {
     -webkit-backdrop-filter: blur(8px) saturate(180%);
 }
 
-/* .wp-block-navigation__responsive-container.is-menu-open.is-menu-open {
+.wp-block-navigation__responsive-container.is-menu-open.is-menu-open {
     height: 100vh;
-} */
+}
 
 /* ===========================
 Tag Cloud Button Style
@@ -99,27 +99,17 @@ Tag Cloud Button Style
 
 .wp-block-tag-cloud.is-style-button-style .tag-cloud-link {
     padding: var(--wp--preset--spacing--xs) var(--wp--preset--spacing--sm);
-    margin: 0;
     background-color: var(--wp--preset--color--black-25);
     border: 1px solid var(--wp--preset--color--white-10);
     color: var(--wp--preset--color--gray-300);
     border-radius: 8px;
+    margin: 0;
 }
 
 .wp-block-tag-cloud.is-style-button-style .tag-cloud-link:hover {
     background-color: var(--wp--preset--color--black-80);
     border-color: var(--wp--preset--color--emerald);
     color: var(--wp--preset--color--emerald);
-}
-
-/* ===========================
-Header Styles
-=========================== */
-
-.wp-block-heading,
-.wp-block-post-title,
-.wp-block-query-title {
-    font-weight: 400;
 }
 
 /* ===========================

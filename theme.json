@@ -1,5 +1,5 @@
 {
-    "customTemplates": [
+	"customTemplates": [
 		{
 			"name": "page-no-title",
 			"postTypes": [
@@ -432,6 +432,7 @@
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+					"fontWeight": "400",
 					"lineHeight": 1.4
 				}
 			},
