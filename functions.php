@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function tc_projects_add_editor_styles() {
 	add_theme_support( 'editor-styles' );
-	add_editor_style( 'assets/css/custom-styles.css' );
+	add_editor_style( 'assets/css/styles.css' );
 }
 add_action( 'after_setup_theme', 'tc_projects_add_editor_styles' );
 
@@ -19,8 +19,8 @@ add_action( 'after_setup_theme', 'tc_projects_add_editor_styles' );
  */
 function tc_projects_enqueue_styles() {
 	wp_enqueue_style(
-		'lumen-custom-styles',
-		get_template_directory_uri() . '/assets/css/custom-styles.css',
+		'lumen-styles',
+		get_template_directory_uri() . '/assets/css/styles.css',
 		array(),
 		wp_get_theme()->get( 'Version' )
 	);

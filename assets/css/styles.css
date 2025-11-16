@@ -117,7 +117,8 @@ Header Styles
 =========================== */
 
 .wp-block-heading,
-.wp-block-post-title {
+.wp-block-post-title,
+.wp-block-query-title {
     font-weight: 400;
 }
 
