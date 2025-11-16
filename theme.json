@@ -295,6 +295,48 @@
 		}
 	},
 	"styles": {
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": {
+						"bottomLeft": "8px",
+						"bottomRight": "8px",
+						"topLeft": "8px",
+						"topRight": "8px"
+					}
+				}
+			},
+			"core/image": {
+				"border": {
+					"radius": {
+						"bottomLeft": "4px",
+						"bottomRight": "4px",
+						"topLeft": "4px",
+						"topRight": "4px"
+					}
+				}
+			},
+			"core/pullquote": {
+				"border": {
+					"bottom": {
+						"color": "rgba(255, 255, 255, 0.1)",
+						"style": "solid",
+						"width": "1px"
+					},
+					"color": null,
+					"style": null,
+					"top": {
+						"color": "rgba(255, 255, 255, 0.1)",
+						"style": "solid",
+						"width": "1px"
+					},
+					"width": null
+				},
+				"color": {
+					"background": "var(--wp--preset--color--black-25)"
+				}
+			}
+		},
 		"color": {
 			"background": "var(--wp--preset--color--background)",
 			"text": "var(--wp--preset--color--white)"
