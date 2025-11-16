@@ -59,6 +59,11 @@
 					"slug": "white-10"
 				},
 				{
+					"color": "rgba(255, 255, 255, 0.6)",
+					"name": "White 60%",
+					"slug": "white-60"
+				},
+				{
 					"color": "#000000",
 					"name": "Black",
 					"slug": "black"
@@ -334,6 +339,18 @@
 						"bottomRight": "4px",
 						"topLeft": "4px",
 						"topRight": "4px"
+					}
+				},
+				"variations": {
+					"rounded": {
+						"border": {
+							"radius": {
+								"bottomLeft": "100%",
+								"bottomRight": "100%",
+								"topLeft": "100%",
+								"topRight": "100%"
+							}
+						}
 					}
 				}
 			},
