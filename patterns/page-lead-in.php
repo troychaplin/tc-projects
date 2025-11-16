@@ -11,6 +11,10 @@
 <h1 class="wp-block-heading has-custom-2-font-size" style="line-height:1.3">Hi, I'm Troy Chaplin</h1>
 <!-- /wp:heading -->
 
+<!-- wp:image {"id":807,"width":"244px","sizeSlug":"medium","linkDestination":"none","align":"right","blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"screenSize":{"hideOnScreenSize":{"small":true}}}}]}} -->
+<figure class="wp-block-image alignright size-medium is-resized"><img src="http://localhost:8887/wp-content/uploads/2025/09/e752d986-640f-418f-84bc-551fdd4959b0-300x300.png" alt="A Ghibli styled rendering of Troy" class="wp-image-807" style="width:244px"/></figure>
+<!-- /wp:image -->
+
 <!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|emerald"}}}},"textColor":"emerald","fontSize":"xx-large"} -->
 <h2 class="wp-block-heading has-emerald-color has-text-color has-link-color has-xx-large-font-size">Developer &amp; Designer</h2>
 <!-- /wp:heading -->
@@ -30,7 +34,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Stat"},"style":{"spacing":{"blockGap":"0","padding":{"right":"0","left":"var:preset|spacing|md"}},"border":{"right":{"width":"0px","style":"none"},"left":{"color":"var:preset|color|white-10","width":"1px"},"top":[],"bottom":[]}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"screenSize":{"hideOnScreenSize":{"small":true}}}}]}} -->
+<!-- wp:group {"metadata":{"name":"Stat"},"style":{"spacing":{"blockGap":"0","padding":{"right":"0","left":"var:preset|spacing|md"}},"border":{"right":{"width":"0px","style":"none"},"left":{"color":"var:preset|color|white-10","width":"1px"},"top":[],"bottom":[]}},"layout":{"type":"constrained"},"blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"screenSize":{"hideOnScreenSize":{"small":true,"medium":true}}}}]}} -->
 <div class="wp-block-group" style="border-right-style:none;border-right-width:0px;border-left-color:var(--wp--preset--color--white-10);border-left-width:1px;padding-right:0;padding-left:var(--wp--preset--spacing--md)"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|gray-300"}}}},"textColor":"gray-300","fontSize":"x-small"} -->
 <p class="has-gray-300-color has-text-color has-link-color has-x-small-font-size">Currently</p>
 <!-- /wp:paragraph -->

@@ -88,6 +88,16 @@ header.is-position-sticky {
 }
 
 /* ===========================
+Navigation Styles
+=========================== */
+
+.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content:hover,
+.wp-block-navigation .wp-block-navigation-item.current-menu-item .wp-block-navigation-item__content,
+.wp-block-navigation .wp-block-navigation-item.current-menu-item .wp-block-navigation-item__content:hover {
+    color: var(--wp--preset--color--emerald);
+}
+
+/* ===========================
 Tag Cloud Button Style
 =========================== */
 
