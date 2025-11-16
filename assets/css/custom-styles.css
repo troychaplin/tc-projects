@@ -168,3 +168,25 @@ Pagination Styles
 .wp-block-query-pagination-previous-arrow:hover {
     color: var(--wp--preset--color--emerald);
 }
+
+/* ===========================
+Comments Form Styles
+=========================== */
+
+.wp-block-post-comments-form .logged-in-as,
+.wp-block-post-comments-form .comment-form-comment {
+    font-size: var(--wp--preset--font-size--small);
+}
+
+.wp-block-post-comments-form .comment-form-comment textarea {
+    background-color: var(--wp--preset--color--black-25);
+    border: 1px solid var(--wp--preset--color--white-10);
+    color: var(--wp--preset--color--white);
+    margin-top: var(--wp--preset--spacing--sm);
+    padding: var(--wp--preset--spacing--md);
+    border-radius: 8px;
+}
+
+.wp-block-post-comments-form .comment-form-comment textarea:focus {
+    outline: 1px solid var(--wp--preset--color--emerald);
+}
