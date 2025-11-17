@@ -12,7 +12,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":807,"width":"244px","sizeSlug":"medium","linkDestination":"none","align":"right","blockVisibility":{"controlSets":[{"id":1,"enable":true,"controls":{"screenSize":{"hideOnScreenSize":{"small":true}}}}]}} -->
-<figure class="wp-block-image alignright size-medium is-resized"><img src="http://localhost:8887/wp-content/uploads/2025/09/e752d986-640f-418f-84bc-551fdd4959b0-300x300.png" alt="A Ghibli styled rendering of Troy" class="wp-image-807" style="width:244px"/></figure>
+<figure class="wp-block-image alignright size-medium is-resized"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/troy-headshot.jpg' ) ); ?>" alt="A Ghibli styled rendering of Troy" class="wp-image-807" style="width:244px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|emerald"}}}},"textColor":"emerald","fontSize":"xx-large"} -->

@@ -6,6 +6,13 @@
 				"page"
 			],
 			"title": "Page: No Title"
+		},
+		{
+			"name": "single-post-no-featured",
+			"postTypes": [
+				"post"
+			],
+			"title": "Single Post: No Featured"
 		}
 	],
 	"settings": {
@@ -17,6 +24,11 @@
 					"color": "#090909",
 					"name": "Background",
 					"slug": "background"
+				},
+				{
+					"color": "#888888",
+					"name": "Gray 400",
+					"slug": "gray-400"
 				},
 				{
 					"color": "#b0b0b0",
