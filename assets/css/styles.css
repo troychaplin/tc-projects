@@ -3,7 +3,8 @@
  */
 
 /* Background Gradient */
-html::before {
+html::before,
+.wp-block-navigation__responsive-container.is-menu-open::before {
     --translate-x: -20%;
     --translate-y: -20%;
     --rotate: -25deg;
@@ -24,25 +25,29 @@ html::before {
 }
 
 @media (max-width: 1024px) {
-    html::before {
+    html::before,
+    .wp-block-navigation__responsive-container.is-menu-open::before {
         --translate-x: -5%;
     }
 }
 
 @media (max-width: 782px) {
-    html::before {
+    html::before,
+    .wp-block-navigation__responsive-container.is-menu-open::before {
         --translate-x: 5%;
     }
 }
 
 @media (max-width: 599px) {
-    html::before {
+    html::before,
+    .wp-block-navigation__responsive-container.is-menu-open::before {
         --translate-x: 15%;
     }
 }
 
 /* Background Random Dot Pattern */
-body::before {
+body::before,
+.wp-block-navigation__responsive-close::before {
     content: '';
     position: fixed;
     inset: 0;
@@ -133,7 +138,28 @@ Navigation Responsive Styles
         border-color: var(--wp--preset--color--emerald);
         color: var(--wp--preset--color--emerald);
     }
+
+    .wp-block-navigation__responsive-container-close {
+        background-color: var(--wp--preset--color--black-80);
+        padding: var(--wp--preset--spacing--xs);
+        border-radius: 50%;
+    }
+
+    .wp-block-navigation__responsive-container-close svg {
+        width: 20px;
+        height: 20px;
+    }
 }
+
+/* ===========================
+Tag Cloud Button Style
+=========================== */
+
+.lumen-social-icons .wp-block-outermost-icon-block .icon-container.has-icon-color svg:hover {
+    fill: var(--wp--preset--color--lightning) !important;
+    color: var(--wp--preset--color--lightning) !important;
+}
+
 
 /* ===========================
 Tag Cloud Button Style
